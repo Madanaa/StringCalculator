@@ -37,8 +37,16 @@ public class TestCalculator {
 	        assertEquals(6, cal.calculate("1\n2,3"));
 	    }
 	@Test
-    public void supportForCustomDelimiter() {
+    public void Delimiter() {
         Calculator cal = new Calculator();
-        assertEquals(0, cal.calculate(";\n1;2;3;4"));
+        assertEquals(0, cal.calculate("//[***]\n1***2***3"));
     }
+	@Test
+    public void MultiDelimiter() {
+        Calculator cal = new Calculator();
+        assertEquals(0, cal.calculate("//[*][%]\n1*2%3"));
+    }
+	
 }
+
+
