@@ -1,13 +1,17 @@
 package calculator.co;
 
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Test;
 
 
 public class TestCalculator {
 	@Test
-    public void stringReturnsZero(){
-    	Calculator cal = new Calculator();
-    	equals(cal.calculate("",0));
+    public void emptyStringShouldReturnZero() {
+        Calculator cal = new Calculator();
+        assertEquals(0, cal.calculate(""));
     }
-	
+    
+    
+    
 }
