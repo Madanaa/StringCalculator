@@ -36,4 +36,9 @@ public class TestCalculator {
 	      Calculator cal = new Calculator();
 	        assertEquals(6, cal.calculate("1\n2,3"));
 	    }
+	@Test
+    public void supportForCustomDelimiter() {
+        Calculator cal = new Calculator();
+        assertEquals(0, cal.calculate(";\n1;2;3;4"));
+    }
 }
