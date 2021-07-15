@@ -21,5 +21,11 @@ public class TestCalculator {
         Calculator cal = new Calculator();
         assertEquals(0, cal.calculate("1,2"));
     }
+	@Test
+    public void moreDigitsSupported() {
+        Calculator cal = new Calculator();
+
+        assertEquals(1, cal.calculate("15,30"));
+    }
     
 }
